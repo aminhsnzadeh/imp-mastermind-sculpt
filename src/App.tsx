@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MainScene from "./scenes/main";
+import MainScene from "./scenes/main/index.tsx";
 
 function App() {
   const [count, setCount] = useState(0)

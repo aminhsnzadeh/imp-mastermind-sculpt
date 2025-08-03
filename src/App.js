@@ -1,6 +1,8 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import Scene from "./scenes/main";
+import { useState } from 'react';
+import MainScene from "./scenes/main";
 function App() {
-    return (_jsx("div", { style: { width: '100vw', height: '100vh' }, children: _jsx(Scene, {}) }));
+    const [count, setCount] = useState(0);
+    return (_jsx("div", { style: { width: '100vw', height: '100vh' }, children: _jsx(MainScene, {}) }));
 }
 export default App;
