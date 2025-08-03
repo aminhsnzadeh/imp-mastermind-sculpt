@@ -13,6 +13,7 @@ export default function MainCamera() {
                 ref={camRef}
                 makeDefault
                 position={responsivePosition}
+
                 fov={50}
             />
         </>
