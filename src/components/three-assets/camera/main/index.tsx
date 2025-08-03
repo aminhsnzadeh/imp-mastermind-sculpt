@@ -5,8 +5,7 @@ export default function MainCamera() {
 
     const camRef = useRef(null)
     const isMobilePoint: boolean = window.innerWidth <= 768
-    const responsivePosition: [number, number, number] = isMobilePoint ? [0, 10, 0] : [0, 10, 0]
-    const responsiveYRotation = isMobilePoint ? (Math.PI / 6) : (Math.PI / 2)
+    const responsivePosition: [number, number, number] = isMobilePoint ? [0, 0, 8] : [0, 0, 8]
 
     return (
         <>
@@ -14,7 +13,6 @@ export default function MainCamera() {
                 ref={camRef}
                 makeDefault
                 position={responsivePosition}
-                rotation={[4, 3, 3]}
                 fov={50}
             />
         </>
